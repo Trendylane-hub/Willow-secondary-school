@@ -1,125 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>WSS | Willow Secondary School</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            line-height: 1.6;
-        }
+<title>WSS | Willow Secondary School</title>
 
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 40px;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 20px;
-            backdrop-filter: blur(8px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-        }
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    overflow-y:auto;
+}
 
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+/* Layout */
+.container{
+    display:flex;
+    min-height:100vh;
+}
 
-        .subtitle {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
+/* Sidebar */
+.sidebar{
+    width:260px;
+    background:#020617;
+    padding:20px;
+    box-shadow:3px 0 10px rgba(0,0,0,0.5);
+}
 
-        h2 {
-            margin-top: 30px;
-            margin-bottom: 10px;
-            font-size: 22px;
-            color: #ffd166;
-        }
+.sidebar h2{
+    text-align:center;
+    margin-bottom:20px;
+}
 
-        ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
+/* Rule Boxes */
+.rule-box{
+    background:#111827;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:10px;
+    border-left:5px solid #38bdf8;
+    transition:0.3s;
+}
 
-        li {
-            margin-bottom: 8px;
-        }
+.rule-box:hover{
+    transform:translateX(5px);
+    background:#1f2937;
+}
 
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background: #ffd166;
-            color: #1e3c72;
-            font-weight: 700;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: 0.3s ease;
-        }
+/* Main Content */
+.main{
+    flex:1;
+    padding:40px;
+}
 
-        .button:hover {
-            background: white;
-            transform: scale(1.05);
-        }
+.title{
+    font-size:40px;
+    font-weight:bold;
+}
 
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-weight: 600;
-            opacity: 0.8;
-        }
-    </style>
+.section{
+    background:#111827;
+    padding:25px;
+    border-radius:12px;
+    margin-top:25px;
+}
+
+.section h2{
+    color:#38bdf8;
+}
+
+/* Role Grid */
+.roles{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:10px;
+}
+
+.role{
+    background:#020617;
+    padding:10px;
+    border-radius:8px;
+}
+
+/* Button */
+.join-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.join-btn:hover{
+    background:#0ea5e9;
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <h1>🎓 WSS | Willow Secondary School 🏫</h1>
-    <div class="subtitle">
-        A welcoming community built for fun, friendship, and positive experiences.
-    </div>
+<!-- SIDEBAR RULES -->
+<div class="sidebar">
+<h2>📘 Rules</h2>
 
-    <h2>🌟 About Our Community</h2>
-    <p>
-        Willow Secondary School is a community focused on helping others,
-        building friendships, and making sure everyone has the best possible fun
-        while still keeping things respectful and organized.
-    </p>
+<div class="rule-box">Respect all students & staff at all times.</div>
+<div class="rule-box">Follow Roblox & community guidelines.</div>
+<div class="rule-box">No trolling or disrupting lessons.</div>
+<div class="rule-box">Listen to staff instructions immediately.</div>
+<div class="rule-box">Keep roleplay realistic & appropriate.</div>
+<div class="rule-box">No bullying, harassment or discrimination.</div>
+<div class="rule-box">Uniform & behaviour standards must be followed.</div>
+<div class="rule-box">Use school areas correctly.</div>
+<div class="rule-box">Failure to follow rules may result in removal.</div>
 
-    <h2>💬 What We Offer</h2>
-    <ul>
-        <li>📚 Engaging school roleplay experiences</li>
-        <li>🤝 A supportive and friendly community</li>
-        <li>🎉 Fun events and activities</li>
-        <li>📏 Clear and fair rules to keep things enjoyable for everyone</li>
-    </ul>
+</div>
 
-    <h2>📋 Our Values</h2>
-    <ul>
-        <li>✔️ Respect everyone</li>
-        <li>✔️ Follow the rules</li>
-        <li>✔️ Help others when needed</li>
-        <li>✔️ Have fun the right way</li>
-    </ul>
+<!-- MAIN CONTENT -->
+<div class="main">
 
-    <center>
-        <a class="button" href="https://discord.gg/CPpWeadheR" target="_blank">
-            🚀 Join Willow Secondary School
-        </a>
-    </center>
+<div class="title">
+🏫 WSS | Willow Secondary School
+</div>
 
-    <div class="footer">
-        WSS | Where Community Comes First 💙
-    </div>
+<p>
+Welcome to <b>Willow Secondary School</b> — a professional school roleplay
+community focused on helping players enjoy realistic education roleplay
+while maintaining structure, respect, and fun.
+</p>
 
+<!-- SCHOOL INFO -->
+<div class="section">
+<h2>📚 School Information</h2>
+<p>
+Our community focuses on teamwork, learning, and creating the best
+possible experience for everyone. Students attend lessons,
+participate in activities, and interact within a safe,
+organized environment.
+</p>
+</div>
+
+<!-- ROLES -->
+<div class="section">
+<h2>🎓 Roles</h2>
+
+<div class="roles">
+<div class="role">Chief Executive Officer</div>
+<div class="role">Executive Head Teacher</div>
+<div class="role">Head Teacher</div>
+<div class="role">Senior Internal Affairs</div>
+<div class="role">Trial Internal Affairs</div>
+<div class="role">Head of Year 7</div>
+<div class="role">Head of Year 8</div>
+<div class="role">Head of Year 9</div>
+<div class="role">Head of Year 10</div>
+<div class="role">Teacher</div>
+<div class="role">SEN</div>
+<div class="role">Media Team</div>
+<div class="role">Awaiting Training</div>
+<div class="role">VIP</div>
+<div class="role">Year 7</div>
+<div class="role">Year 8</div>
+<div class="role">Year 9</div>
+<div class="role">Year 10</div>
+<div class="role">School Visitor</div>
+</div>
+
+</div>
+
+<!-- ACTIVITIES -->
+<div class="section">
+<h2>📝 Activities</h2>
+<ul>
+<li>General Lessons</li>
+<li>Classroom Roleplay</li>
+<li>School Events</li>
+<li>Student Interaction</li>
+<li>Educational Activities</li>
+</ul>
+</div>
+
+<!-- JOIN -->
+<div class="section">
+<h2>🔗 Join Our Community</h2>
+
+<a class="join-btn"
+href="https://discord.gg/CPpWeadheR"
+target="_blank">
+Join WSS Discord
+</a>
+
+</div>
+
+</div>
 </div>
 
 </body>
